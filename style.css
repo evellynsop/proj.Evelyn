@@ -1,107 +1,154 @@
-body {
-  background-color: #f5f3f9; /* fundo lilás bem clarinho */
-  font-family: "Poppins", sans-serif;
-  color: #3d3d3d;
+/* 🌸 ESTILO GERAL */
+* {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centraliza tudo na horizontal */
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Cabeçalho */
+body {
+  background-color: #ffeef8; /* fundo rosa clarinho */
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+/* 🌸 CABEÇALHO */
 header {
-  background: linear-gradient(135deg, #e270d9, #ec9df3);
+  background-color: #ffb6d9;
   color: #fff;
   text-align: center;
-  width: 100%;
-  padding: 30px 0;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #ff87c3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2em;
-  letter-spacing: 1px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Menu */
+header p {
+  font-size: 1.1rem;
+}
+
+/* 🌸 MENU DE NAVEGAÇÃO */
 nav {
-  background-color: #fff;
-  width: 100%;
+  background-color: #ff87c3;
   display: flex;
   justify-content: center;
-  gap: 25px;
-  padding: 15px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  gap: 2rem;
+  padding: 1rem;
 }
 
 nav a {
+  color: white;
   text-decoration: none;
-  color: #d83fb2;
   font-weight: 600;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: #f147b9;
+  color: #ffeef8;
   text-decoration: underline;
 }
 
-/* Container das seções */
+/* 🌸 CONTAINER PRINCIPAL */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* 🌸 ASIDE */
+aside {
+  background-color: #ffd3e6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+aside h3 {
+  color: #ff4fa3;
+  margin-bottom: 1rem;
+}
+
+
+/* 🌸 CONTEÚDO PRINCIPAL */
 main {
-  max-width: 900px;
   background-color: #fff;
-  margin: 40px auto;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center; /* centraliza o texto */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos das seções */
-section h2 {
-  color: #f15fde;
-  border-bottom: 2px solid #f79af2;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+/* 🌸 ARTIGOS */
+article {
+  margin-bottom: 2rem;
 }
 
-/* Parágrafos */
-p {
-  font-size: 1em;
-  line-height: 1.6;
+article h2 {
+  color: #ff4fa3;
+  margin-bottom: 0.8rem;
+  border-left: 5px solid #ff87c3;
+  padding-left: 0.5rem;
 }
 
-/* Imagens */
+article p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: square inside;
+  margin-left: 1rem;
+}
+
 img {
+  width: 100%;
   max-width: 180px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  margin: 20px auto;
-  display: block;
+  margin: 1rem 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Listas */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  background: #f3b9e9;
-  margin: 8px 0;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-/* Rodapé */
+/*  RODAPÉ */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #e270d9;
+  background-color: #ffb6d9;
   color: #fff;
-  font-size: 0.9em;
-  width: 100%;
-  margin-top: 30px;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-top: 4px solid #ff87c3;
+  font-weight: 500;
+}
+
+/* CLASSES DE TEXTO */
+.autor {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.description {
+  font-style: italic;
+  color: #444;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  main {
+    padding: 1.2rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
