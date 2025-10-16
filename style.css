@@ -1,0 +1,107 @@
+body {
+  background-color: #f5f3f9; /* fundo lilás bem clarinho */
+  font-family: "Poppins", sans-serif;
+  color: #3d3d3d;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza tudo na horizontal */
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #e270d9, #ec9df3);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+/* Menu */
+nav {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #d83fb2;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #f147b9;
+  text-decoration: underline;
+}
+
+/* Container das seções */
+main {
+  max-width: 900px;
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center; /* centraliza o texto */
+}
+
+/* Títulos das seções */
+section h2 {
+  color: #f15fde;
+  border-bottom: 2px solid #f79af2;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Parágrafos */
+p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Imagens */
+img {
+  max-width: 180px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin: 20px auto;
+  display: block;
+}
+
+/* Listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f3b9e9;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e270d9;
+  color: #fff;
+  font-size: 0.9em;
+  width: 100%;
+  margin-top: 30px;
+}
